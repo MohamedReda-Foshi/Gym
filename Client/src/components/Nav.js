@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -10,23 +11,30 @@ function Nav() {
           </div>
           <div className="justify-around px-6">
             <ul className="flex flex-row justify-between">
-              <li className="my-2 py-4 mx-4 items-center hover:text-red-500 cursor-pointer">
+              <Link 
+                to="/"
+              className="my-2 py-4 mx-4 items-center hover:text-red-500 cursor-pointer">
                 Home
-              </li>
-              <li className="my-2 py-4 mx-4 items-center hover:text-red-500 cursor-pointer">
-                Nutrition
-              </li>
-              <li className="my-2 py-4 mx-4 items-center hover:text-red-500 cursor-pointer">
+              </Link>
+              <Link 
+               to="/Nutration"
+
+              className="my-2 py-4 mx-4 items-center hover:text-red-500 cursor-pointer">
+                Nutration
+              </Link>
+              <Link className="my-2 py-4 mx-4 items-center hover:text-red-500 cursor-pointer">
                 Work Out
-              </li>
+              </Link>
             </ul>
           </div>
 
           <div>
             <ul className="flex-row px-3">
-              <li>
-                <a href="home">Shop</a>
-              </li>
+              <Link
+                to="/Shop"
+              >
+               Shop
+              </Link>
             </ul>
           </div>
         </div>

@@ -19,7 +19,7 @@ function Item(props) {
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.{" "}
             </p>
-            <Button button="Add"/>
+            <Button button="Add to "/>
           </div>
         </div>
       </div>
