@@ -7,6 +7,7 @@ function ShopI() {
       <div>
         <h1>By your supplement</h1>
       </div>
+ 
       
       <div className="flex flex-col md:flex-row justify-center ">
         <Item nameItem="Protien" price="90" />
