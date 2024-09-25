@@ -13,19 +13,17 @@ import Review from "../components/Review";
 function Home() {
   return (
     <div>
-        
-<Main />
+      <Main />
 
-<WorkOut />
-<Nutration />
-<About/>
-<Subsci />
-<Gallery/>
-<Review/>
-<ShopI />
-
+      <WorkOut />
+      <Nutration />
+      <About />
+      <Subsci />
+      <Gallery />
+      <Review />
+      <ShopI />
     </div>
-  )
+  );
 }
 
 export default Home;

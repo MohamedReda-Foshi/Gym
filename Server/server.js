@@ -1,23 +1,51 @@
+const express = require("express");
+const app = express();
+const mongoose = require("mongoose");
+const port = 5000;
 
-const express=require("express")
+app.use(express.json());
 
-const mongoose=require("mongoose")
-
+//"mongodb+srv://redafoshi11:JCV0dbhGgXrxEchjhiTK@cluster0.jn6aciz.mongodb.net/Product?retryWrites=true&w=majority&appName=Cluster0"
 mongoose
-    .connect("mongodb://localhost:27017/Gymdatab")
-    .then(()=>{
-        console.log("Connected to MongoDB")
-    }).catch((err)=>{
-        console.log(err);
-    })
-
-const app=express()
-
-app.get("/",(req,res)=>{
-    res.send("the home page")
+  .connect("mongodb://localhost:27017/Gymdatab")
+  .then(() => {
+    app.listen(port, () => {
+        console.log(`Server is run in port ${port} `);
+  });
+  console.log("Connected !");
 })
 
+  .catch((err) => {
+    console.error("MongoDB connection error:", err);
+  });
 
-app.listen("3000",()=>{
-    console.log("Server is run in port 3000")
-})
+
+
+
+//import modle product
+const GymProd = require("./model/Suplement");
+const UserAdminModel = require("./model/AdmUser");
+
+app.get("/Product", async (req, res) => {
+ 
+    const products = await GymProd.find();
+    res.json(products);
+    console.log(products);
+  
+
+  
+});
+
+app.get("/AdminUser", async (req, res) => {
+  const UserAdmin = await UserAdminModel.find();
+  res.json(UserAdmin);
+  console.log(UserAdmin);
+});
+
+//improt modle user
+
+// Your POST route (assuming Express.js is already set up)
+
+app.get("/", (req, res) => {
+  res.send(" home page");
+});

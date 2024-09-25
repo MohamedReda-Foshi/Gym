@@ -17,7 +17,10 @@ function Item(props) {
             <p className="text-xs text-gray-400 mt-4">
               {props.infoItem} Lorem ipsum dolor sit amet, consectetur
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.{" "}
+              dolore magna aliqua.
+            </p>
+            <p className="text-gray-400 text-xs flex flex-row-reverse  my-7">
+              {props.Storage}/50
             </p>
             <Button button="Add to "/>
           </div>
