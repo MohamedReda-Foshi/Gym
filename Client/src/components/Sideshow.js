@@ -4,7 +4,7 @@ import { Slide } from 'react-slideshow-image';
 
 function Sideshow() {
   return (
-    <div className="w-full">
+<div className="w-full">
       <Slide
         autoplay={false}
         onChange={function noRefCheck(){}}
