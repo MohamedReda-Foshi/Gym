@@ -1,5 +1,4 @@
-const mongoose = require("mongoose");
-
+import mongoose from 'mongoose';
 // Define Schema
 
  
@@ -18,7 +17,8 @@ const GymProSchema = new mongoose.Schema({
   },
 });
 // Create a model
-const GymProd = mongoose.model("GymProduct", GymProSchema);
+const GymProducts = mongoose.model("GymProduct", GymProSchema);
 
 // Export the model
-module.exports = GymProd;
+export default GymProducts;
+

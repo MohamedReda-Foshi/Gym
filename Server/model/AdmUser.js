@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from 'mongoose';
 
 const UsAdmSchema =new mongoose.Schema({
     AdUserFirstName:{
@@ -20,4 +20,4 @@ const UsAdmSchema =new mongoose.Schema({
 
 const UserAdminModel=mongoose.model("AdminUser",UsAdmSchema);
 
-module.exports=UserAdminModel;
+export default UserAdminModel;
