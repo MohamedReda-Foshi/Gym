@@ -23,7 +23,7 @@ const  handClick=()=>{
   return (
     <div className=" z-20">
       <div className="sm:hidden">
-          <div className="bg-black">
+          <div className="">
             <button className="" onClick={handClick}>
               
                     {setHaMenu}
@@ -37,7 +37,7 @@ const  handClick=()=>{
     <div className=" lg: fixed w-full z-50 bg-transparent ">
 
       
-      <nav role="navigation" className="    px-5 bg-slate-900  border-b-2 border-white   ">
+      <nav role="navigation" className="    px-5 bg-zinc-800 border-b-2 border-white   ">
         <div className="flex-row justify-between items-center ">
           <div className="cursor-pointer">
             <h2>logo</h2>

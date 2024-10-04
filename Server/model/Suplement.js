@@ -17,8 +17,8 @@ const GymProSchema = new mongoose.Schema({
   },
 });
 // Create a model
-const GymProducts = mongoose.model("GymProduct", GymProSchema);
+const GymProduct = mongoose.model("GymProducts", GymProSchema);
 
 // Export the model
-export default GymProducts;
+export default GymProduct;
 

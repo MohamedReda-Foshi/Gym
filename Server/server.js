@@ -2,10 +2,18 @@ import express from "express";
 import mongoose from "mongoose" ;
 import GymProducts from './model/Suplement.js';
 import UserAdminModel from './model/AdmUser.js'; // Convert this to import
+import cors from "cors"
+
+
 
 const app = express();
 const port = 5000;
 
+const corsOptions = {
+  origin: 'http://localhost:3000',  // Change this to the domain where your frontend is running
+  optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 //new passowrld okrVBONWz2iDElfd
 //"mongodb+srv://redafoshi11:JCV0dbhGgXrxEchjhiTK@cluster0.jn6aciz.mongodb.net/Product?retryWrites=true&w=majority&appName=Cluster0"
