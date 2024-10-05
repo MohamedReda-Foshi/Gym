@@ -25,12 +25,13 @@ const MyFormComponent = () => {
         <div>
           <Routes>
             <Route path="/" >
-              <Route index element={<Home />} errorElement={<NotFound />} />
+              <Route index element={<Home />} />
               <Route path="/Shop" element={<Shop/>} />
               <Route path="/Gym" element={<Gympg/>} />
               <Route path="/BoxCard" element={<BoxCard/>} />
               <Route path="/LoginP" element={<LoginP/>} />
-              <Route path="/Sinup" element={<Sinup/>} />v
+              <Route path="/Sinup" element={<Sinup/>} />
+              <Route path="*" element={<NotFound/>} />
             </Route>
           </Routes>
         </div>
