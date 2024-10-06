@@ -54,7 +54,7 @@ function Shop() {
 
     <div className="mt-4  lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
      
-    <div className="lg:col-span-1 ">
+    <div className="lg:col-span-1 sticky top-7">
 
      <Filters/>
     </div>

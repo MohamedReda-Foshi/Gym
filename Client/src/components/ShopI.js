@@ -20,7 +20,7 @@ function ShopI() {
   return (
     <div className="flex-col justify-center">
       <div className="px-6">
-        <h1 className="text-4xl font-bold">Buy your supplement</h1>
+        <h1 className="text-5xl font-bold py-4">Buy your supplement</h1>
       </div>
       
       <div className="flex flex-col md:flex-row justify-center">

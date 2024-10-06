@@ -8,7 +8,7 @@ function Main() {
       {/* Container for text and video */}
       <div className="relative flex flex-col justify-center items-center w-full h-full">
         {/* Text content */}
-        <div className="z-10 text-center my-36 text-5xl py-5">
+        <div className="z-10 text-center my-36 text-7xl py-5">
           <h1 className="font-bold">Transform Your</h1>
           <h1 className="text-red-500 font-bold">Body,</h1>
           <h1 className="font-bold">Transform</h1>
