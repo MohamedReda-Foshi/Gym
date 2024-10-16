@@ -14,15 +14,45 @@ function Sinup() {
       <span className="absolute left-0 top-0 flex items-center justify-center h-full w-10 text-red-500"><FaGoogle /> </span>
       <span>Login with google</span>
     </button>
+    
     <div className="relative mt-10 h-px bg-gray-300">
       <div className="absolute left-0 top-0 flex justify-center w-full -mt-2">
-        <span className="bg-white px-4 text-xs text-gray-500 uppercase">Or Login With Email</span>
+        <span className="bg-white px-4 text-xs text-gray-500 uppercase">Enter your Last Name</span>
+      </div>
+    </div>
+    <div className="relative mt-10 h-px bg-gray-300">
+      <div className="absolute left-0 top-0 flex justify-center w-full -mt-2">
+        <span className="bg-white px-4 text-xs text-gray-500 uppercase">Email</span>
       </div>
     </div>
     <div className="mt-10">
       <form action="#">
         <div className="flex flex-col mb-6">
-          <label for="email" className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">E-Mail Address:</label>
+          <label for="email" className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">Enter your first Name:</label>
+          <div className="relative">
+            <div className="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+              <svg className="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+              </svg>
+            </div>
+
+            <input id="email" type="email" name="email" className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400" placeholder="E-Mail Address" />
+          </div>
+        </div>
+        <div className="flex flex-col mb-6">
+          <label for="email" className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">Enter your last Name:</label>
+          <div className="relative">
+            <div className="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-bla">
+              <svg className="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+              </svg>
+            </div>
+
+            <input id="email" type="email" name="email" className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400" placeholder="E-Mail Address" />
+          </div>
+        </div>
+        <div className="flex flex-col mb-6">
+          <label for="email" className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">Email:</label>
           <div className="relative">
             <div className="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
               <svg className="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -50,12 +80,11 @@ function Sinup() {
 
         <div className="flex items-center mb-6 -mt-4">
           <div className="flex ml-auto">
-            <a href="#" className="inline-flex text-xs sm:text-sm text-red-500 hover:text-red-700">Forgot Your Password?</a>
-          </div>
+                    </div>
         </div>
 
         <div className="">
-        <Button button="Login"/>
+        <Button button="SingUp"/>
          
         </div>
       </form>

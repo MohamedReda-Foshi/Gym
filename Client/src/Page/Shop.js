@@ -1,9 +1,9 @@
 import React from "react";
 
-import Item from "../components/Item";
+
 import Sideshow from "../components/Sideshow";
 import Filters from "../components/Filters";
-import ShopI from "../components/ShopI";
+import ShopAll from "../components/ShopAll";
 
 function Shop() {
   return (
@@ -54,16 +54,13 @@ function Shop() {
 
     <div className="mt-4  lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
      
-    <div className="lg:col-span-1 ">
+    <div className="lg:col-span-1 sticky top-7">
 
      <Filters/>
     </div>
 
-      <div className="lg:col-span-3 bg-black">
-          <ShopI/>
-          <ShopI/>
-          <ShopI/>
-          <ShopI/>
+      <div className="lg:col-span-3  bg-black">
+          <ShopAll/>
       </div>
     </div>
   </div>

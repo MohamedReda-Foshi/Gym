@@ -3,18 +3,11 @@ import mongoose from 'mongoose';
 
  
 const GymProSchema = new mongoose.Schema({
-  ProductName: {
-    ProductName: String, 
-  },
-  Price: {
-    Price: Number,
-  },
-  StorageNumber: {
-    StorageNumber: Number,
-  },
-  Information: {
-    Information: String,
-  },
+  ProductName: { type: String, required: true },
+  Price: { type: Number, required: true },
+  StorageNumber: { type: Number, default: 50 },
+  Information: { type: String, required: true },
+
 });
 // Create a model
 const GymProduct = mongoose.model("GymProducts", GymProSchema);

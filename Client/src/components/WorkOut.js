@@ -5,7 +5,7 @@ function WorkOut() {
   return (
     <div className='flex flex-col   py-5 '>
           <div>
-            <h1 className='text-5xl w-full text-white py-5 font-bold'>Cotches</h1>
+            <h1 className='text-5xl w-full text-white p-5 font-bold'>Cotches</h1>
           </div>
 
           <div className='flex flex-col md:flex-row'>

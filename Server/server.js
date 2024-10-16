@@ -1,8 +1,7 @@
 import express from "express";
 import mongoose from "mongoose" ;
-import GymProducts from './model/Suplement.js';
-import UserAdminModel from './model/AdmUser.js'; // Convert this to import
-import cors from "cors"
+import Product from './routes/Product.js';
+import cors from "cors";
 
 
 
@@ -33,19 +32,8 @@ mongoose
 
 //import modle product
 
-app.get("/Product", async (req, res) => {
- 
-    const products = await GymProducts.find();
-    res.json(products);
-    console.log(products);
-    
-});
+app.use('/api',Product)
 
-app.get("/AdminUser", async (req, res) => {
-  const UserAdmin = await UserAdminModel.find();
-  res.json(UserAdmin);
-  console.log(UserAdmin);
-});
 
 //improt modle user
 
