@@ -3,7 +3,7 @@ import Button from "./Button"
 function Item(props) {
   return (
     <div>
-      <div className=" rounded   m-11 max-w-80">
+      <div className=" rounded gap-4 p-8 max-w-80">
         <div className="  ">
           <div className=" font-semibold text-center rounded-xl border-2 p-3 ">
             <img

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const UsAdmSchema =new mongoose.Schema({
-    AdUserFirstName:{
+    AdUserName:{
         type:String,
     },
     AdUserLastName:{
@@ -18,6 +18,6 @@ const UsAdmSchema =new mongoose.Schema({
 
 });
 
-const UserAdminModel=mongoose.model("AdminUser",UsAdmSchema);
+const UserAdminModel=mongoose.model("adminUser",UsAdmSchema);
 
 export default UserAdminModel;

@@ -14,7 +14,7 @@ function Sideshow() {
           <div
             className="bg-cover bg-center h-[500px]"
             style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)',
+              backgroundImage: 'url(https://www.rhinomuscle.com/)',
             }}
           />
         </div>

@@ -9,6 +9,9 @@ import { Route, Routes } from "react-router-dom";
 import Gympg from "./Page/Gympg";
 import BoxCard from "./Page/BoxCard";
 import Sinup from "./Page/Sinup";
+import Adminpanel from "./Page/Adminpanel";
+import ProductPage from "./Page/ProductPage";
+import CreateProduct from "./components/CreateProduct";
 
 
 
@@ -17,7 +20,7 @@ const MyFormComponent = () => {
 
 
     return (
-        <div className="App text-white bg-black  ">
+        <div className="App text-white   ">
         <div className="  ">
           <Nav />
         </div>
@@ -31,6 +34,9 @@ const MyFormComponent = () => {
               <Route path="/BoxCard" element={<BoxCard/>} />
               <Route path="/LoginP" element={<LoginP/>} />
               <Route path="/Sinup" element={<Sinup/>} />
+              <Route path="/ProductPage" element={<ProductPage/>} />
+              <Route path="/Adminpanel" element={<Adminpanel/>} />
+              <Route path="/CreateProduct" element={<CreateProduct/>} />
               <Route path="*" element={<NotFound/>} />
             </Route>
           </Routes>

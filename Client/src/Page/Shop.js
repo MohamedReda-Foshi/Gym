@@ -1,9 +1,9 @@
 import React from "react";
 
-import Item from "../components/Item";
+
 import Sideshow from "../components/Sideshow";
 import Filters from "../components/Filters";
-import ShopI from "../components/ShopI";
+import ShopAll from "../components/ShopAll";
 
 function Shop() {
   return (
@@ -59,11 +59,8 @@ function Shop() {
      <Filters/>
     </div>
 
-      <div className="lg:col-span-3 bg-black">
-          <ShopI/>
-          <ShopI/>
-          <ShopI/>
-          <ShopI/>
+      <div className="lg:col-span-3  bg-black">
+          <ShopAll/>
       </div>
     </div>
   </div>
