@@ -1,17 +1,18 @@
 import mongoose from 'mongoose';
-// Define Schema
 
- 
-const GymProSchema = new mongoose.Schema({
-  ProductName: { type: String, required: true },
-  Price: { type: Number, required: true },
-  StorageNumber: { type: Number, default: 50 },
-  Information: { type: String, required: true },
-
+const GymProductSchema = new mongoose.Schema({
+  ProductName: {
+    type: String,
+    required: true
+},
+Price: {
+    type: String,
+    required: true
+},
+Information: {
+    type: String,
+    required: true
+}
 });
-// Create a model
-const GymProduct = mongoose.model("GymProducts", GymProSchema);
 
-// Export the model
-export default GymProduct;
-
+export default mongoose.model("Product", GymProductSchema);

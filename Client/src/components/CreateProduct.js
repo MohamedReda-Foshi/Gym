@@ -10,14 +10,17 @@ function CreateProduct() {
   function handleCreateProduct(e) {
     e.preventDefault(); // Prevent form submission from refreshing the page
     
-    Axios.post("http://localhost:5000/api/creatproduct", {
-        name: name,
-        price: price,
-        info: info,
+    Axios.post("http://localhost:8000/api/createproduct", {
+      ProductName: name,
+      Price: price,
+      Information: info,
       })
       .then((res) => {
         console.log("Product created successfully!");
-        console.log(res.data);
+        console.log(res);
+        setname("");
+        setprice("");
+        setinfo("");
         
         
       })
@@ -44,6 +47,7 @@ function CreateProduct() {
         <input
           className="text-black w-60"
           type="text"
+          name="ProductName"
           placeholder="name"
           value={name}
           onChange={(e) => setname(e.target.value)}
@@ -52,6 +56,7 @@ function CreateProduct() {
         <input
           className="text-black w-60 solid"
           type="number"
+          name="Price"
           placeholder="price"
           value={price}
           onChange={(e) => setprice(e.target.value)}
@@ -60,6 +65,7 @@ function CreateProduct() {
           <p className="text-black">Information:</p>
           <input
             className="text-black w-60 h-32"
+            name="Information"
             type="text"
             placeholder="Information"
             value={info}

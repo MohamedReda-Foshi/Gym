@@ -7,7 +7,7 @@ function ShopI() {
 
   useEffect(() => {
     // Fetch data from the API
-    Axios.get("http://localhost:5000/api/Product/")
+    Axios.get("http://localhost:8000/api/product")
       .then((res) => {
         console.log(res.data);  // Log the response here
         setSupplement(res.data); // Set the response data to the state

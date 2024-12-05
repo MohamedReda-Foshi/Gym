@@ -9,7 +9,6 @@ const UsAdmSchema =new mongoose.Schema({
     },
 
     Email:{
-
         type:String,
     },
     Passworld:{

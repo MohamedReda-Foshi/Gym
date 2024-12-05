@@ -1,28 +1,21 @@
-import express from "express";
-import GymProducts from "../model/Suplement.js";
-
-const proapp = express();
+import { Router } from 'express';
+import { getProduct, getProducts , postProduct} from '../controller/userController.js';
 
 // Middleware to parse JSON request bodies
-proapp.use(express.json());
 
 
-
-
-
-
+const router = Router();
 
 // Get a limited number of products
-proapp.get("/Product", async (req, res) => {
-  const products = await GymProducts.find().limit(3);
-  res.json(products);
-});
+router.get('/product', getProduct);
+// post a product
+router.post('/createproduct', postProduct);
+
 
 // Get all products
-proapp.get("/Allproducts", async (req, res) => {
-  const products = await GymProducts.find();
-  res.json(products);
-});
+router.get("/products",getProducts );
+
+
 
 
 
@@ -33,7 +26,14 @@ proapp.get("/Allproducts", async (req, res) => {
 
 
 // Add a product
-proapp.post("/creatproduct", async (req, res) => {
+
+
+
+
+export default router;
+
+/*
+router.post("/creatproduct", async (req, res) => {
   console.log("Request body:", req.body); // Log the request body
   
   const { name, price, info } = req.body;  // Parsing from the request body
@@ -56,5 +56,4 @@ proapp.post("/creatproduct", async (req, res) => {
     res.status(500).json({ error: "Error creating product" });
   }
 });
-
-export default proapp;
+*/
