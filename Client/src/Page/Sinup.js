@@ -16,19 +16,13 @@ function Sinup() {
     </button>
     
     <div className="relative mt-10 h-px bg-gray-300">
-      <div className="absolute left-0 top-0 flex justify-center w-full -mt-2">
-        <span className="bg-white px-4 text-xs text-gray-500 uppercase">Enter your Last Name</span>
-      </div>
+      
     </div>
-    <div className="relative mt-10 h-px bg-gray-300">
-      <div className="absolute left-0 top-0 flex justify-center w-full -mt-2">
-        <span className="bg-white px-4 text-xs text-gray-500 uppercase">Email</span>
-      </div>
-    </div>
+   
     <div className="mt-10">
       <form action="#">
         <div className="flex flex-col mb-6">
-          <label for="email" className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">Enter your first Name:</label>
+          <label for="email" className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">First Name:</label>
           <div className="relative">
             <div className="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
               <svg className="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -36,11 +30,15 @@ function Sinup() {
               </svg>
             </div>
 
-            <input id="email" type="email" name="email" className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400" placeholder="E-Mail Address" />
+            <input 
+            id="firstName"
+             type="text" 
+             name="firstName"
+              className="text-sm text-black sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400" placeholder="Enter your first Name" />
           </div>
         </div>
         <div className="flex flex-col mb-6">
-          <label for="email" className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">Enter your last Name:</label>
+          <label for="firstName" className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">Last Name:</label>
           <div className="relative">
             <div className="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-bla">
               <svg className="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -48,7 +46,11 @@ function Sinup() {
               </svg>
             </div>
 
-            <input id="email" type="email" name="email" className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400" placeholder="E-Mail Address" />
+            <input 
+            id="lasname" 
+            type="text" 
+            name="lasname" 
+            className="text-sm text-black sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400" placeholder="Enter your Last name" />
           </div>
         </div>
         <div className="flex flex-col mb-6">
@@ -60,7 +62,10 @@ function Sinup() {
               </svg>
             </div>
 
-            <input id="email" type="email" name="email" className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400" placeholder="E-Mail Address" />
+            <input
+             id="email" 
+             type="email" 
+             name="email" className="text-sm text-black sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400" placeholder="E-Mail Address" />
           </div>
         </div>
         <div className="flex flex-col mb-6">
@@ -74,7 +79,11 @@ function Sinup() {
               </span>
             </div>
 
-            <input id="password" type="password" name="password" className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400" placeholder="Password" />
+            <input 
+            id="password" 
+            type="password" 
+            name="password" 
+            className="text-sm text-black sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400" placeholder="Password" />
           </div>
         </div>
 

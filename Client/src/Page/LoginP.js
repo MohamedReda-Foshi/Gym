@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 function LoginP() {
   return (
-    <div className="py-20">
+    <div className="py-20 bg-black">
       <div className="min-h-screen flex flex-col items-center justify-center ">
-        <div className="flex flex-col bg-red-400 shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
-          <div className="font-medium self-center text-xl sm:text-2xl uppercase text-white">
+        <div className="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
+          <div className="font-medium self-center text-xl sm:text-2xl uppercase text-white dark:text-black ">
             Login To Your Account
           </div>
           <button className="relative mt-6 border rounded-md py-2 text-sm text-gray-800 bg-gray-100 hover:bg-gray-200">
@@ -52,7 +52,7 @@ function LoginP() {
                     id="email"
                     type="email"
                     name="email"
-                    className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400"
+                    className="text-sm sm:text-base text-black placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400"
                     placeholder="E-Mail Address"
                   />
                 </div>
@@ -85,10 +85,10 @@ function LoginP() {
                     id="password"
                     type="password"
                     name="password"
-                    className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400"
+                    className="text-sm sm:text-base text-black placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-red-400"
                     placeholder="Password"
                   />
-                  <input type="" />
+                 
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ function LoginP() {
           </div>
           <div className="flex justify-center items-center mt-6">
             <Link to="/Sinup">
-              <p className="ml-2">You don't have an account?</p>
+              <p className="ml-2 hover:text-red-600 dark:text-black">click to creat a account?</p>
             </Link>
           </div>
         </div>

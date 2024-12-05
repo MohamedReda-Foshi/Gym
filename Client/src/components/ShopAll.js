@@ -7,10 +7,11 @@ function ShopAll() {
 
   useEffect(() => {
     
-    Axios.get("http://localhost:5000/api/Allproducts")
+    Axios.get("http://localhost:8000/api/products")
       .then((res) => {
         console.log(res.data);
         setSupplement(res.data);
+        console.log("send data",res.data);
       })
       .catch((err) => {
         console.log(err);
