@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getProduct, getProducts , postProduct} from '../controller/userController.js';
+import { getProduct, getProducts , postProduct} from '../controller/productController.js';
 
 // Middleware to parse JSON request bodies
 

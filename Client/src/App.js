@@ -12,7 +12,8 @@ import Sinup from "./Page/Sinup";
 import Adminpanel from "./Page/Adminpanel";
 import ProductPage from "./Page/ProductPage";
 import CreateProduct from "./components/CreateProduct";
-
+import Newadmin from "./Page/Newadmin";
+import Adminlogin from "./Page/Adminlogin";
 
 
 
@@ -37,6 +38,9 @@ const MyFormComponent = () => {
               <Route path="/ProductPage" element={<ProductPage/>} />
               <Route path="/Adminpanel" element={<Adminpanel/>} />
               <Route path="/CreateProduct" element={<CreateProduct/>} />
+              <Route path="/admin" element={<Adminlogin/>} />
+              <Route path="/Newadmin" element={<Newadmin/>} />
+
               <Route path="*" element={<NotFound/>} />
             </Route>
           </Routes>

@@ -1,25 +1,21 @@
-import express from "express";
-import UserAdminModel from '../model/AdmUser.js';
+import { Router } from 'express';
 
-const AdminUser=express()
-
-AdminUser.use(express.json());
+import{getAdmUsers,postAdmProduct} from '../controller/userController.js'
 
 
-AdminUser.get("/adminuser", async (req, res) => {
-    const UserAdmin = await UserAdminModel.find();
-    res.json(UserAdmin);
-  });
 
 
-AdminUser.get("/addadminuser",(req,res)=>{
-  res.send("test")
-  const {Email,Passworld}=req.body
-  
-   res.json({Email,Passworld})  
-})
+const router = Router();
+
+
+// get admin user
+
+router.get("/adminuser",getAdmUsers);
+
+// post admin user
+router.post("/addadminuser",postAdmProduct);
 
   
 
   
-  export default AdminUser;
+  export default router;
