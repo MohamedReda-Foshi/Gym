@@ -11,9 +11,8 @@ router.get('/product', getProduct);
 // post a product
 router.post('/createproduct', postProduct);
 
-
 // Get all products
-router.get("/products",getProducts );
+router.get("/products",getProducts);
 
 
 
