@@ -6,6 +6,8 @@ import { connect }  from "./config/database.js";
 
 import Product from './routes/Product.js';
 import AdminUser from './routes/AdminUser.js';
+import User from './routes/User.js';
+import Auth from './routes/authrouter.js';
 
 dotenv.config();
 
@@ -39,6 +41,10 @@ await connect();
 
 app.use('/api',Product)
 app.use('/api',AdminUser)
+app.use('/api',User)
+
+app.use('/auth',Auth)
+
 
 
 

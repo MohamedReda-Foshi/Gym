@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import{getAdmUsers,postAdmProduct} from '../controller/userController.js'
+import{getAdmUsers,postAdmUser} from '../controller/admuserController.js';
 
 
 
@@ -13,7 +13,7 @@ const router = Router();
 router.get("/adminuser",getAdmUsers);
 
 // post admin user
-router.post("/addadminuser",postAdmProduct);
+router.post("/addadminuser",postAdmUser);
 
   
 
