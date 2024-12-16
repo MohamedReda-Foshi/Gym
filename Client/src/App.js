@@ -21,7 +21,7 @@ const MyFormComponent = () => {
 
 
     return (
-        <div className="App text-white   ">
+        <div className="App text-white bg-black  ">
         <div className="  ">
           <Nav />
         </div>
@@ -40,7 +40,6 @@ const MyFormComponent = () => {
               <Route path="/CreateProduct" element={<CreateProduct/>} />
               <Route path="/admin" element={<Adminlogin/>} />
               <Route path="/Newadmin" element={<Newadmin/>} />
-
               <Route path="*" element={<NotFound/>} />
             </Route>
           </Routes>

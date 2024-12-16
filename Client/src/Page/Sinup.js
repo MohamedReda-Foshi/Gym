@@ -1,21 +1,22 @@
 import React from 'react'
 import Button from '../components/Button'
 import { FaGoogle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 function Sinup() {
   return (
-    <div className='py-72 bg-black'>
+    <div className=' py-7 bg-black'>
       
 <div className="min-h-screen flex flex-col items-center justify-center ">
-  <div className="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
+  <div className="flex flex-col bg-zinc-900 shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
     <div className="font-medium self-center text-xl sm:text-2xl uppercase text-white">Login To Your Account</div>
     <button className="relative mt-6 border rounded-md py-2 text-sm text-gray-800 bg-gray-100 hover:bg-gray-200">
       <span className="absolute left-0 top-0 flex items-center justify-center h-full w-10 text-red-500"><FaGoogle /> </span>
-      <span>Login with google</span>
+      <span>Sin up with google</span>
     </button>
     
-    <div className="relative mt-10 h-px bg-gray-300">
+    <div className="relative mt-1 h-px bg-slate-950">
       
     </div>
    
@@ -87,13 +88,16 @@ function Sinup() {
           </div>
         </div>
 
-        <div className="flex items-center mb-6 -mt-4">
-          <div className="flex ml-auto">
-                    </div>
+        <div  className='pb-4'>
+         
+          <Link to="/LoginP">
+              <p className="ml-2 hover:text-red-600 dark:text-black">click if you all ready have a account</p>
+            </Link>
+          
         </div>
 
         <div className="">
-        <Button button="SingUp"/>
+        <Button button="Sing Up"/>
          
         </div>
       </form>

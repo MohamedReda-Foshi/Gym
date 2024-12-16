@@ -29,11 +29,7 @@ app.use(express.json());
 await connect();
 
 
-
-
-
 //import modle product
-
 
 
 
@@ -44,8 +40,6 @@ app.use('/api',AdminUser)
 app.use('/api',User)
 
 app.use('/auth',Auth)
-
-
 
 
 //improt modle user

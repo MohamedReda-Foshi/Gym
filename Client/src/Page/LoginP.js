@@ -101,7 +101,7 @@ function LoginP() {
           </div>
           <div className="flex justify-center items-center mt-6">
             <Link to="/Sinup">
-              <p className="ml-2 hover:text-red-600 dark:text-black">click to creat a account?</p>
+              <p className="ml-2 hover:text-red-600 dark:text-black">click to creat a account</p>
             </Link>
           </div>
         </div>
