@@ -8,6 +8,7 @@ import Product from './routes/Product.js';
 import AdminUser from './routes/AdminUser.js';
 import User from './routes/User.js';
 import Auth from './routes/authrouter.js';
+import session  from "express-session";
 
 dotenv.config();
 
@@ -39,7 +40,12 @@ app.use('/api',Product)
 app.use('/api',AdminUser)
 app.use('/api',User)
 
-app.use('/auth',Auth)
+
+
+app.use('/api',Auth)
+
+
+
 
 
 //improt modle user
@@ -48,6 +54,23 @@ app.use('/auth',Auth)
 // Home routes
 
 app.get("/", (req, res) => {
-  res.send(" home page");
+
+  console.log(req.session);
+  res.send("session");
 });
+
+// Authenticated 
+
+app.use(session({
+    secret:"secret",
+    resave:false,
+    saveUninitialized:true,
+    cookie: {
+          maxAge:1000*60*60*24,
+     }  // Change this to true in production environment
+
+}));
+
+
+
 export default app;
